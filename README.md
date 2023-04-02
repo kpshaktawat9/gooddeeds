@@ -11,6 +11,7 @@
 8. php artisan csv:generate 20 (command for generate CSV file)
 9. API's 
   9.1 :- Login (use email and password of 5th step)
+  Type = POST
   http://127.0.0.1:8000/api/login 
 
     {
@@ -18,8 +19,9 @@
         "password":
     }
 
-    9.2:- data insert from csv file (use token of login response for authentication )
-    http://127.0.0.1:8000/api/csv_data
+  9.2:- data insert from csv file (use token of login response for authentication )
+  Type = POST
+  http://127.0.0.1:8000/api/csv_data
 
 
 
