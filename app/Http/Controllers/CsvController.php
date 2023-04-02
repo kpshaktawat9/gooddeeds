@@ -11,8 +11,9 @@ use DB;
 class CsvController extends Controller
 {
     //
-    public function export()
+    public function csv_data()
     {
+        
         $users = [];
 
         if (($open = fopen(storage_path() . "/app/export/user.csv", "r")) !== FALSE) {
