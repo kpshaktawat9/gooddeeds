@@ -34,6 +34,7 @@ class SendMailFired
 
         $data['email'] =$event->user['email'];
         $data['name'] =$event->user['name'];
+        $data['count'] =$event->count;
         Log::info($data);
 
         Mail::send('jobcompleted',$data, function ($message) use($data){

@@ -49,6 +49,7 @@ class CsvDataInsert implements ShouldQueue
 
         array_shift($users);
         // print_r($users);
+        $count = count($users);
 
         foreach($users as $row)
         {
@@ -63,7 +64,7 @@ class CsvDataInsert implements ShouldQueue
             ]);
         }
 
-        Event::dispatch(new sendMail($this->user));
+        Event::dispatch(new sendMail($this->user,$count));
 
     }
 }

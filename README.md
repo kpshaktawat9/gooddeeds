@@ -3,11 +3,14 @@
 1. composer install
 2. npm install
 3. npm run dev
-4. php artisan serve 
-5. regester and login 
-6. php artisan csv:generate 20 (command for generate CSV file)
-7. API's 
-  7.1 :- Login (use email and password of 5th step)
+4. php artisan passport:install
+5. php artisan migrate
+6. php artisan serve 
+7. register and login 
+
+8. php artisan csv:generate 20 (command for generate CSV file)
+9. API's 
+  9.1 :- Login (use email and password of 5th step)
   http://127.0.0.1:8000/api/login 
 
     {
@@ -15,7 +18,7 @@
         "password":
     }
 
-    7.2:- data insert from csv file (use token of login response for authentication )
+    9.2:- data insert from csv file (use token of login response for authentication )
     http://127.0.0.1:8000/api/csv_data
 
 

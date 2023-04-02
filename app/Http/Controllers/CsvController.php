@@ -18,10 +18,10 @@ class CsvController extends Controller
     {
         $email =   Auth()->user();
         dispatch(new CsvDataInsert($email));
-    //    Event::dispatch(new sendMail());
-    //    dd('yes');
+    
         return response()->json([
-            'status'=>$email
+            'status'=>200,
+            'message'=>"please check your email",
         ]);
         
         

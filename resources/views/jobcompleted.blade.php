@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 style="background-color:green;">Job Comepleted Successfully</h1>
+    <h1 style="background-color:green; color:white;">{{$name}}</h1> <br>
+    <p style="background-color:green;  color:white;"><strong>{{$count}}</strong> records Inserted In Your Daatabase</p>
 </body>
 </html>

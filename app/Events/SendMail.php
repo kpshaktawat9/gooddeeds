@@ -20,10 +20,12 @@ class SendMail
      * @return void
      */
     public $user ;
-    public function __construct($user)
+    public $count ;
+    public function __construct($user,$count)
     {
         //
         $this->user = $user;
+        $this->count = $count;
     }
 
     /**
