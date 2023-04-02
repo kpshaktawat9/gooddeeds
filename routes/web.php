@@ -30,5 +30,6 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('export', [CsvController::class, 'export']);
+Route::get('csv_data', [CsvController::class,'csv_data']);
 
 require __DIR__.'/auth.php';
